@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Whale Tracker</title>
+<link rel="canonical" href="https://apps.apple.com/app/id6751474710">
+<script>
+(function () {
+  // Serves as the fallback for any app deep link (e.g. /s/<sighting-id>) opened on a
+  // device WITHOUT the app installed. Preserve the ?ct= tag if present, then send to
+  // the App Store. Installed devices open the app directly and never hit this page.
+  var ct = 'deeplink';
+  try { ct = new URLSearchParams(location.search).get('ct') || 'deeplink'; } catch (e) {}
+  var url = 'https://apps.apple.com/app/id6751474710?pt=whaletrackerapp&ct=' + encodeURIComponent(ct);
+  location.replace(url);
+})();
+</script>
+<meta http-equiv="refresh" content="1;url=https://apps.apple.com/app/id6751474710?pt=whaletrackerapp&ct=deeplink">
+<style>
+  body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;
+       background:#06121f;color:#eaf4ff;text-align:center;padding:64px 22px;line-height:1.6}
+  a{color:#39c2ff;font-weight:600}
+  .badge{font-size:56px}
+  h1{font-size:1.4rem;margin:14px 0 6px;letter-spacing:-.01em}
+  p{color:#9dbbd8}
+</style>
+</head>
+<body>
+  <div class="badge">🐋</div>
+  <h1>Opening Whale Tracker…</h1>
+  <p>Taking you to the App Store. If nothing happens,<br>
+     <a href="https://apps.apple.com/app/id6751474710?pt=whaletrackerapp&ct=deeplink">tap here to download</a>.</p>
+</body>
+</html>

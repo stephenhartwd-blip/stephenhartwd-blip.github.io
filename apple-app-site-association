@@ -1,0 +1,11 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appID": "89MZ94Q966.orcaspotter.Orcaspotter",
+        "paths": [ "/go", "/go/*", "/s/*", "/app/*" ]
+      }
+    ]
+  }
+}
